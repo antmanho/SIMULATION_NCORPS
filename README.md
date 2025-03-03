@@ -122,9 +122,9 @@ mvn test
 
 ## 📺 Démo Vidéo
 
-🎥 **Regarde la démo sur YouTube** :  <a href="https://youtube.com/"> Lien de la video </a>
+🎥 **Regarde la démo sur YouTube** :  <a href="https://youtu.be/fvZZaPLQvLE?si=fXTVX_2RBq3fG2OG"> Lien de la video </a>
 <div align="center">
-<a href="https://youtube.com/" target="_blank">
+<a href="https://youtu.be/fvZZaPLQvLE?si=fXTVX_2RBq3fG2OG" target="_blank">
     <img src="FRONTEND/IMAGE/logo_youtube.png" width="100" alt="YouTube">
 </a>
 </div>
