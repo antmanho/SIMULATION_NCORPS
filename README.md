@@ -1,5 +1,16 @@
+<div align="center">
+  
 # Simulation à N-Corps avec WebSocket
 
+</div>
+
+
+## 📷 Interface 
+
+<div align="center">
+<br><img src="FRONTEND/IMAGE/application_interface.png" alt="QuadTree" width="500"><br>
+</div>
+  
 ## 📌 Présentation du projet
 
 Ce projet est une **simulation à N-Corps** utilisant **WebSockets** pour la communication entre le **backend en Java** et le **frontend en JavaScript**.  
@@ -36,7 +47,7 @@ myproject/
 │   ├── index.html
 │   └── main.js
 └── README.md
-
+```
 ## 🌍 Explication de l'algorithme
 
 La simulation repose sur **l'algorithme de Barnes-Hut**, qui est une optimisation du problème des N-corps en gravitation. 
@@ -54,14 +65,10 @@ L'algorithme repose sur une division récursive de l'espace en quadrants grâce 
   Dans la méthode naïve, chaque particule interagit directement avec toutes les autres particules. Cela signifie que pour  N  particules, on effectue  N×(N−1) calculs de force gravitationnelle.  
   Complexité :  O (N2), ce qui devient rapidement impraticable pour un grand nombre de particules (par exemple, 10 000 particules nécessitent 100 millions de calculs). 
   Avantage : Simplicité de mise en œuvre. 
-  Inconvénient : Non scalable pour des simulations de grande envergure. 
-  ✅ Avantages de Barnes-Hut  
-  ✅ Réduction de la complexité : de O(N²) à O(N log N) grâce à la hiérarchie du QuadTree. 
-  ✅ Gestion efficace des grandes simulations : permet de calculer des milliers de particules en temps réel. 
-  ✅ Utilisation optimisée des WebSockets : mise à jour en continu via un serveur WebSocket. 
    
 📷 **Représentation de la méthode QuadTree**
-<img src="frontend/images/QuadTree_image.png" alt="QuadTree" width="500">
+
+<br><img src="FRONTEND/IMAGE/QuadTree_image.png" alt="QuadTree" width="500"><br>
 
 
 ### ✅ Avantages de Barnes-Hut
@@ -73,29 +80,25 @@ L'algorithme repose sur une division récursive de l'espace en quadrants grâce 
 
 ### 1️⃣ Lancer le serveur WebSocket (Backend Java)
 
-bash
+```bash
 cd backend
 mvn clean package
 java -jar target/nbody-simulator-1.0-SNAPSHOT.jar
-
+```
 
 ### 2️⃣ Lancer l'interface graphique (Frontend JavaScript)
 
 Ouvrir frontend/index.html dans un navigateur ou exécuter un serveur local :
 
-bash
+```bash
 cd frontend
 python3 -m http.server 8080
-
+```
 
 Puis accéder à :
+```bash
 http://localhost:8080
-
-
-📷 **Interface de la simulation**
-
-![Application Interface](frontend/images/application_interface.png)
-
+```
 ## 🧪 Lancer les tests
 
 bash
@@ -119,9 +122,12 @@ mvn test
 
 ## 📺 Démo Vidéo
 
-🎥 **Regarde la démo sur YouTube** :  
-[![YouTube](frontend/images/logo_youtube.png)](https://youtube.com/)
+🎥 **Regarde la démo sur YouTube** :  <a href="https://youtube.com/"> Lien de la video </a>
+<div align="center">
+<a href="https://youtube.com/" target="_blank">
+    <img src="FRONTEND/IMAGE/logo_youtube.png" width="100" alt="YouTube">
+</a>
+</div>
 
----
 
 🚀 **Projet réalisé par [Barbedet Anthony](https://github.com/tonybarbedet)**
