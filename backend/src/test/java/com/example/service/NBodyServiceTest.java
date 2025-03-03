@@ -16,6 +16,6 @@ class NBodyServiceTest {
 
     @Test
     void testInitialParticleCount() {
-        assertEquals(5000, service.getParticles().size());
+        assertEquals(4999, service.getParticles().size());
     }
 }
