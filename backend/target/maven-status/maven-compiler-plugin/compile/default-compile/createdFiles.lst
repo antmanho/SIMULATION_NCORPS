@@ -1,0 +1,6 @@
+com/example/service/NBodyService.class
+com/example/App.class
+com/example/controller/NBodyEndpoint.class
+com/example/model/Vector2.class
+com/example/model/QuadTree.class
+com/example/model/Particle.class
